@@ -64,10 +64,3 @@ disp('Ubicaciones de los maximos (picos) en el patron de interferencia:');
 for i = 1:length(pks)
     fprintf('Maximo #%d: Intensidad = %.2f, Ubicacion = %.4f mm\n', i, pks(i), ubicacion_picos_mm(i));
 end
-
-% Opcional: Grafica los maximos sobre el perfil de intensidad
-figure(2);
-hold on;
-plot(ubicacion_picos_mm, pks, 'ro', 'MarkerSize', 8, 'LineWidth', 2);
-legend('Perfil de Intensidad', 'Maximos Identificados');
-hold off;
